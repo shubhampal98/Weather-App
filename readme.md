@@ -1,6 +1,9 @@
 # Weather App
 
 [![Codacy Badge](https://api.codacy.com/project/badge/Grade/646f5e9586d94cd58eaf43597f7d7a8c)](https://app.codacy.com/app/shubhampal1898/Weather-App?utm_source=github.com&utm_medium=referral&utm_content=shubhampal98/Weather-App&utm_campaign=Badge_Grade_Dashboard)
+![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/shubhampal98/Weather-App.svg)
+![David](https://img.shields.io/david/shubhampal98/Weather-App.svg)
+![licence](https://img.shields.io/github/license/shubhampal98/Weather-App.svg)
 
 ![Weather App](public/img/app.png)
 
