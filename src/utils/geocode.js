@@ -16,7 +16,7 @@ const geocode = (address, callback) => {
         long: data.center[0],
         lat: data.center[1],
         location: data.place_name
-      }
+      };
       callback(undefined, responseObj);
     }
   });
