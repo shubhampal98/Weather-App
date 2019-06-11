@@ -7,16 +7,14 @@ form.addEventListener("submit", e => {
   weather1.textContent = "Loading....";
   weather2.textContent = "";
   e.preventDefault();
-  fetch(`http://localhost:3000/weather?address=${address.value}`).then(
-    response => {
-      response.json().then(data => {
-        if (data.error) {
-          weather1.textContent = data.error;
-        } else {
-          weather1.textContent = data.forecast;
-          weather2.textContent = data.location;
-        }
-      });
-    }
-  );
+  fetch(`/weather?address=${address.value}`).then(response => {
+    response.json().then(data => {
+      if (data.error) {
+        weather1.textContent = data.error;
+      } else {
+        weather1.textContent = data.forecast;
+        weather2.textContent = data.location;
+      }
+    });
+  });
 });
