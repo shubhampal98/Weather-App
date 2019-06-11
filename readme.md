@@ -16,6 +16,13 @@ The server is made on `nodejs` (v12.4.0)
 
 The frontend is made with `HTML, CSS and Vanilla JS`
 
+## API
+
+- It uses [Mapbox](https://www.mapbox.com/) api for geocoding the location text into geographic coordinates.
+  **Ex** - `2 Lincoln Memorial Circle NW` into `-77.050,38.889`.
+
+- It uses [Darksky](https://darksky.net/dev) to fetch the weather data by provding the geographic coordinates.
+
 ---
 
 ## For Developers
