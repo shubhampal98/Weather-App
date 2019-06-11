@@ -1,5 +1,7 @@
 # Weather App
 
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/646f5e9586d94cd58eaf43597f7d7a8c)](https://app.codacy.com/app/shubhampal1898/Weather-App?utm_source=github.com&utm_medium=referral&utm_content=shubhampal98/Weather-App&utm_campaign=Badge_Grade_Dashboard)
+
 ![Weather App](public/img/app.png)
 
 Weather app to give you the forecast of any location in the world.
