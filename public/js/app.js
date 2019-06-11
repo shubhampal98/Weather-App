@@ -3,12 +3,12 @@ const address = document.querySelector("input");
 const weather1 = document.querySelector("#weather1");
 const weather2 = document.querySelector("#weather2");
 
-form.addEventListener("submit", e => {
+form.addEventListener("submit", (e) => {
   weather1.textContent = "Loading....";
   weather2.textContent = "";
   e.preventDefault();
-  fetch(`/weather?address=${address.value}`).then(response => {
-    response.json().then(data => {
+  fetch(`/weather?address=${address.value}`).then((response) => {
+    response.json().then((data) => {
       if (data.error) {
         weather1.textContent = data.error;
       } else {

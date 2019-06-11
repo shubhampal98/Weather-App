@@ -18,10 +18,10 @@ The frontend is made with `HTML, CSS and Vanilla JS`
 
 ## API
 
-- It uses [Mapbox](https://www.mapbox.com/) api for geocoding the location text into geographic coordinates.
+-  It uses [Mapbox](https://www.mapbox.com/) api for geocoding the location text into geographic coordinates.
   **Ex** - `2 Lincoln Memorial Circle NW` into `-77.050,38.889`.
 
-- It uses [Darksky](https://darksky.net/dev) to fetch the weather data by provding the geographic coordinates.
+-  It uses [Darksky](https://darksky.net/dev) to fetch the weather data by provding the geographic coordinates.
 
 ---
 
@@ -29,13 +29,13 @@ The frontend is made with `HTML, CSS and Vanilla JS`
 
 ### NPM Commands
 
-- `npm i` - install all dependencies
+-  `npm i` - install all dependencies
 
 ```terminal
 npm i
 ```
 
-- `npm run start` - starts the server
+-  `npm run start` - starts the server
 
 ```terminal
 npm run start
