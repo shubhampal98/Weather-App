@@ -36,6 +36,7 @@ a {
 
 .main-content {
     flex-grow: 1;
+    padding: 0;
     justify-content: center;
     align-content: center;
     text-align: center;
@@ -78,23 +79,25 @@ header {
 header h1::before {
     content: '';
     position: absolute;
-    height: 32px;
+    height: 4%;
     margin-top: auto;
     left: 50px;
-    width: 500px;
+    width: 20%;
     border-radius: 20px 60px;
+    background: #ED8F38;
     background: linear-gradient(90deg, #CD6F8A 50%, #ED8F38);
-    /* background: linear-gradient(90deg, #8A2BE2 10%, #B181DD 90%); */
+    background: -webkit-linear-gradient(90deg, #CD6F8A 50%, #ED8F38);
 }
 header h1::after {
     content: '';
     position: absolute;
-    height: 32px;
+    height: 4%;
     right: 50px;
-    width: 500px;
+    width: 20%;
     border-radius: 60px 20px;
+    background: #ED8F38;
     background: linear-gradient(270deg, #CD6F8A 50%, #ED8F38);
-    /* background: linear-gradient(270deg, #8A2BE2 10%, #B181DD 90%); */
+    background: -webkit-linear-gradient(90deg, #CD6F8A 50%, #ED8F38);
 }
 
 h1 {
@@ -130,7 +133,9 @@ input:focus {
 
 button {
     cursor: pointer;
+    background: #ED8F38;
     background: linear-gradient(180deg, #CD6F8A 50%, #ED8F38 );
+    background: -webkit-linear-gradient(90deg, #CD6F8A 50%, #ED8F38);
     color: white;
     padding: 8px;
     border: none;
@@ -138,13 +143,27 @@ button {
 }
 
 button:hover {
+    background: #ED8F38;
     background: linear-gradient(360deg, #CD6F8A 10%, #ED8F38);
+    background: -webkit-linear-gradient(90deg, #CD6F8A 50%, #ED8F38);
     transition: 0.9s;
     transform: scale(1.1);
 }
 
 .gif {
     pointer-events: none;
-    Cursor:text !important;
+    width:100%;
+    height:0;
+    padding-bottom:56%;
+    position:relative;
+    margin-top: 10%;
+    Cursor:text;
     box-shadow: #000000ab 10px 10px 25px;
+}
+
+@media all and (max-width: 320px) {
+    body {
+        font-size: 2rem;
+    }
+    
 }
