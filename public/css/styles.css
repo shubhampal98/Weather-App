@@ -1,3 +1,6 @@
+/* ========================================<    COLOUR   >======================================== */
+/* ffffff,00a7e1,00171f,003459,007ea7 */
+
 /* ========================================<    BASIC STYLING   >======================================== */
 
 * {
@@ -5,26 +8,27 @@
     padding: 0;
     box-sizing: border-box;
     font-family: arial;
+    color: #ffffff;
 }
 
 body {
-    color: #333333;
+    color: #ffffff;
     max-width: 650px;
     margin: 0 auto;
     padding: 0 16px;
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-    background: #5f2c82;
+    background: #ffffff;
     /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #49a09d, #5f2c82);
+    background: -webkit-linear-gradient(to bottom, #00A7E1, #003459);
     /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #49a09d, #5f2c82);
+    background: linear-gradient(to bottom, #00A7E1, #003459);
     /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 a {
-    color: #f5f5f5;
+    color: #ffffff;
     text-decoration: none;
 }
 
@@ -49,8 +53,8 @@ a {
 }
 
 .main-content img:hover {
-    transform: rotateX(360deg);
-    transition: 1s;
+    animation: shake 0.5s;
+    animation-iteration-count: infinite;
 }
 
 .main-content p {
@@ -63,6 +67,10 @@ a {
     margin-top: 40px;
 }
 
+#weather1, #weather2 {
+    font-size: 1.2rem;
+    color: #ffffff;
+} 
 footer {
     color: #111111;
     border-top: 1px solid #eeeeee;
@@ -71,33 +79,45 @@ footer {
     text-align: center;
 }
 
+footer p span {
+    font-weight: 400;
+}
+
 header {
+
+    color: #333333;
     margin-top: 16px;
     margin-bottom: 48px;
+}
+
+header h1 {
+
+    color: #333333;
 }
 
 header h1::before {
     content: '';
     position: absolute;
-    height: 4%;
-    margin-top: auto;
+    height: 0.5%;
+    margin-top: 2%;
     left: 50px;
-    width: 20%;
+    width: 30%;
     border-radius: 20px 60px;
-    background: #ED8F38;
-    background: linear-gradient(90deg, #CD6F8A 50%, #ED8F38);
-    background: -webkit-linear-gradient(90deg, #CD6F8A 50%, #ED8F38);
+    background: #00A7E1;
+    background: linear-gradient(0deg, #003459 50%, #ffffff00);
+    background: -webkit-linear-gradient(0deg, #003459 50%, #ffffff00);
 }
 header h1::after {
     content: '';
     position: absolute;
-    height: 4%;
+    height: 0.5%;
+    margin-top: 2%;
     right: 50px;
-    width: 20%;
+    width: 30%;
     border-radius: 60px 20px;
-    background: #ED8F38;
-    background: linear-gradient(270deg, #CD6F8A 50%, #ED8F38);
-    background: -webkit-linear-gradient(90deg, #CD6F8A 50%, #ED8F38);
+    background: #00A7E1;
+    background: linear-gradient(180deg, #003459 50%, #ffffff00);
+    background: -webkit-linear-gradient(180deg, #003459 50%, #ffffff00);
 }
 
 h1 {
@@ -106,14 +126,20 @@ h1 {
 }
 
 header a {
+    
     margin-right: 16px;
 }
 
-header a:hover {
+/* header a:hover {
     border-bottom: 2px solid #ED8F38;
     transition: .2s;
     transform: scale(2.1);
     border-radius: 3px;
+} */
+
+
+header a:hover {
+    color: #333333;
 }
 
 .portrait {
@@ -133,9 +159,9 @@ input:focus {
 
 button {
     cursor: pointer;
-    background: #ED8F38;
-    background: linear-gradient(180deg, #CD6F8A 50%, #ED8F38 );
-    background: -webkit-linear-gradient(90deg, #CD6F8A 50%, #ED8F38);
+    background: #007EA7;
+    background: linear-gradient(90deg, #003459 50%, #007EA7 );
+    background: -webkit-linear-gradient(90deg, #003459 50%, #007EA7);
     color: white;
     padding: 8px;
     border: none;
@@ -143,11 +169,11 @@ button {
 }
 
 button:hover {
-    background: #ED8F38;
-    background: linear-gradient(360deg, #CD6F8A 10%, #ED8F38);
-    background: -webkit-linear-gradient(90deg, #CD6F8A 50%, #ED8F38);
+    background: #007EA7;
+    background: linear-gradient(270deg, #003459 60%, #007EA7);
+    background: -webkit-linear-gradient(270deg, #003459 40%, #007EA7);
     transition: 0.9s;
-    transform: scale(1.1);
+    transform: scale(1.01);
 }
 
 .gif {
@@ -161,9 +187,58 @@ button:hover {
     box-shadow: #000000ab 10px 10px 25px;
 }
 
+
 @media all and (max-width: 320px) {
     body {
         font-size: 2rem;
     }
     
+}
+
+/* ============================================||   Animation  ||============================================ */
+
+@keyframes shake {
+    0% {
+        transform: translate(1px, 1px) rotate(0deg);
+    }
+
+    10% {
+        transform: translate(-1px, -2px) rotate(-1deg);
+    }
+
+    20% {
+        transform: translate(-3px, 0px) rotate(1deg);
+    }
+
+    30% {
+        transform: translate(3px, 2px) rotate(0deg);
+    }
+
+    40% {
+        transform: translate(1px, -1px) rotate(1deg);
+    }
+
+    50% {
+        transform: translate(-1px, 2px) rotate(-1deg);
+    }
+
+    60% {
+        transform: translate(-3px, 1px) rotate(0deg);
+    }
+
+    70% {
+        transform: translate(3px, 1px) rotate(-1deg);
+    }
+
+    80% {
+        transform: translate(-1px, -1px) rotate(1deg);
+    }
+
+    90% {
+        transform: translate(1px, 2px) rotate(0deg);
+    }
+
+    100% {
+        transform: translate(1px, -2px) rotate(-1deg);
+    }
 }
