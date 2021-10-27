@@ -12,8 +12,8 @@ form.addEventListener("submit", (e) => {
       if (data.error) {
         weather1.textContent = data.error;
       } else {
-        weather1.textContent = data.forecast;
-        weather2.textContent = data.location;
+        weather1.textContent = "✔️ " + data.forecast;
+        weather2.textContent = "✔️ " + data.location;
       }
     });
   });
