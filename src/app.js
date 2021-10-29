@@ -38,6 +38,20 @@ app.get("/help", (req, res) => {
   });
 });
 
+app.get("/serving", (req, res) => {
+  res.render("serving", {
+    title: "Messiah arrived",
+    name: "Shubham Pal"
+  });
+});
+
+app.get("/helping", (req, res) => {
+  res.render("helping", {
+    title: "Help served",
+    name: "Shubham Pal"
+  });
+});
+
 app.get("/weather", (req, res) => {
   if (!req.query.address) {
     return res.send({

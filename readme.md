@@ -5,7 +5,7 @@
 ![David](https://img.shields.io/david/shubhampal98/Weather-App.svg)
 ![licence](https://img.shields.io/github/license/shubhampal98/Weather-App.svg)
 
-![Weather App](public/img/app.png)
+![Weather App](public/img/app2.png)
 
 Weather app to give you the forecast of any location in the world.
 
